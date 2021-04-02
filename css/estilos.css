@@ -1,0 +1,110 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(359.8deg, #fff 2.2%, rgba(182,241,171,1) 99.3% );
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p,h3{
+    max-width: 1000px;
+    margin: auto;
+}
+.boton{
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 1rem;
+    border: solid #000 1px;
+    background-color: #ccc;
+    color: #000;
+    font-size: 30px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+    .boton:hover{
+        color: #fff;
+        background-color: #000;
+    }
+.atras_alante{
+    position: fixed;
+    display: flex;
+    bottom: 10px;
+    right: 10px;
+}
+    .atras_alante a:nth-child(1){
+        margin-right: 70px;
+    }
+ul{
+    list-style: none;
+    padding: 1rem;
+}
+    ul li a{
+        text-decoration: none;
+        color: #000;
+    }
+        ul li a:hover{
+            background-color: rgb(146, 209, 135);
+            padding: 0 2rem;
+        }
+nav{
+    left: 0;
+    text-align: left;
+}
+    nav ul{
+        position: fixed;
+        border:solid #000 1px;
+        background-color: #ccc;
+        border-left:solid rgb(137, 207, 125) 5px;
+        opacity: 0;
+    }
+        nav ul li{
+            margin-left: 25px;
+        }
+            nav label img{
+                width: 30px;
+            }
+.contenido{
+    width: 500px;
+    border: solid #ccc 1px;
+    margin: auto;
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    margin-top: 35px;
+    border-bottom:solid rgba(182,241,171,1) 5px;
+}
+    .contenido h1{
+        font-weight: 300;
+        font-style: italic;
+    }
+        .contenido img{
+            border:solid rgb(154, 204, 145) 1.3px;
+            padding: 1px;
+            border-radius: 50%;
+            width: 150px;
+            margin-top: 1rem;
+        }
+            .contenido p{
+                text-shadow: 1px 1px 2.5px;
+                margin-bottom: 25px;
+            }
+@media(max-width:600px){
+    .contenido{
+        width: 95%;
+    }
+}
+#menu{
+    opacity: 0;
+}
+.navegacion input[type="checkbox"]:checked ~ ul{
+    opacity: 1;
+    display: block;
+    transition: all 2s;
+}
+#img-test{
+    margin: 2rem;
+    box-shadow: 5px 5px 10px;
+}
+.copyrigth{
+    margin-top: 25px;
+}
